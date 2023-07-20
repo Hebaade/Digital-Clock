@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Ysabeau+Office:wght@100;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    overflow: hidden;
+   background:  conic-gradient(from 90deg at 40% -25%, #ffd700, #f79d03, #ee6907, #e6390a, #de0d0d, #d61039, #cf1261, #c71585, #cf1261, #d61039, #de0d0d, #ee6907, #f79d03, #ffd700, #ffd700, #ffd700);
+   background-repeat: no-repeat;
+}
+.container{
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.digitalClock{
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.137);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    width: fit-content;
+    color: white;
+    padding: 20px;
+}
+.digitalClock h1{
+    margin: 0 10px;
+    font-size: 5rem;
+    display: inline-block;
+    font-weight: bold;
+}
+@media(max-width:768px){
+   #bar1,#bar2{
+    display: none;
+   }
+   .digitalClock{
+    text-align: center;
+    width: 100%;
+   }
+   .digitalClock h1{
+    display: block;
+   }
+}
+@media(max-width:480px){
+    .digitalClock h1{
+        font-size: 4rem;
+    }
+}
